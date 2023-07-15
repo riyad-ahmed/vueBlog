@@ -1,11 +1,17 @@
 <template>
   <header class="bg-gray-800">
     <div class="container mx-auto py-4 flex justify-between items-center">
-      <div class="flex items-center">
-        <img src="logo.png" alt="Logo" class="w-8 h-8 mr-2" />
-        <!-- Replace "logo.png" with your logo path -->
-        <h1 class="text-white font-bold text-lg">My Website</h1>
-      </div>
+      <router-link to="/">
+        <div class="flex items-center">
+          <img
+            src="https://riyad-ahmed.github.io/Portfolio/image/letter%20R%20.png"
+            alt="Logo"
+            class="w-8 h-8 mr-2"
+          />
+          <h1 class="text-white font-bold text-lg">My Website</h1>
+          <!-- Replace "logo.png" with your logo path -->
+        </div>
+      </router-link>
       <nav>
         <ul class="flex space-x-4">
           <li><router-link to="/" class="text-white">Home</router-link></li>

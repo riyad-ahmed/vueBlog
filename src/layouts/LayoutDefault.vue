@@ -21,8 +21,4 @@ export default {
 };
 </script>
 
-<style scoped>
-Footer {
-  position: fixed;
-}
-</style>
+<style scoped></style>
