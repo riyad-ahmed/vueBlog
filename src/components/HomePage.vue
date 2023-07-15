@@ -1,6 +1,23 @@
 <template>
   <section class="bg-blue-500 text-white py-16">
     <div class="container mx-auto text-center">
+      <div class="relative">
+        <img
+          src="slider-image1.jpg"
+          alt="Slider Image 1"
+          class="mx-auto rounded-lg"
+        />
+        <img
+          src="slider-image2.jpg"
+          alt="Slider Image 2"
+          class="mx-auto rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 opacity-0 scale-90 transition duration-500"
+        />
+        <img
+          src="slider-image3.jpg"
+          alt="Slider Image 3"
+          class="mx-auto rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4 opacity-0 scale-90 transition duration-500"
+        />
+      </div>
       <h1 class="text-4xl font-bold mb-4">Welcome to Your App</h1>
       <p class="text-lg mb-8">A powerful solution for all your needs</p>
       <a
