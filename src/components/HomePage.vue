@@ -2,10 +2,9 @@
   <div>
     <section class="bg-blue-500 text-white py-16">
       <div class="container mx-auto text-center">
-        <div class="glide">
+        <!-- <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <!-- Slide 1 -->
               <li
                 class="glide__slide w-full bg-center bg-cover"
                 v-for="item in sliderItems"
@@ -15,7 +14,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <h1 class="text-4xl font-bold mb-4">Welcome to Your App</h1>
         <p class="text-lg mb-8">A powerful solution for all your needs</p>
         <a
@@ -126,7 +125,7 @@
 </template>
 
 <script>
-import { faker } from "@faker-js/faker";
+// import { faker } from "@faker-js/faker";
 import Glide from "@glidejs/glide";
 export default {
   name: "HomePage",
@@ -140,19 +139,18 @@ export default {
   },
 
   methods: {
-    generateSliderItem(count) {
-      const sliderItems = [];
-
-      for (let i = 0; i < count; i++) {
-        const sliderItem = {
-          id: i + 1,
-          image: faker.image.abstract(2000, 400, true),
-        };
-        sliderItems.push(sliderItem);
-      }
-      console.log(sliderItems);
-      return sliderItems;
-    },
+    // generateSliderItem(count) {
+    //   const sliderItems = [];
+    //   for (let i = 0; i < count; i++) {
+    //     const sliderItem = {
+    //       id: i + 1,
+    //       image: faker.image.abstract(2000, 400, true),
+    //     };
+    //     sliderItems.push(sliderItem);
+    //   }
+    //   console.log(sliderItems);
+    //   return sliderItems;
+    // },
   },
   mounted() {
     const glide = new Glide(".glide", {
