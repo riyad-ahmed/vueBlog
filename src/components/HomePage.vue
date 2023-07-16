@@ -126,39 +126,39 @@
 
 <script>
 // import { faker } from "@faker-js/faker";
-import Glide from "@glidejs/glide";
+// import Glide from "@glidejs/glide";
 export default {
   name: "HomePage",
   data() {
     return {
-      sliderItems: [],
+      // sliderItems: [],
     };
   },
-  created() {
-    this.sliderItems = this.generateSliderItem(5);
-  },
+  // created() {
+  //   this.sliderItems = this.generateSliderItem(5);
+  // },
 
-  methods: {
-    // generateSliderItem(count) {
-    //   const sliderItems = [];
-    //   for (let i = 0; i < count; i++) {
-    //     const sliderItem = {
-    //       id: i + 1,
-    //       image: faker.image.abstract(2000, 400, true),
-    //     };
-    //     sliderItems.push(sliderItem);
-    //   }
-    //   console.log(sliderItems);
-    //   return sliderItems;
-    // },
-  },
-  mounted() {
-    const glide = new Glide(".glide", {
-      type: "carousel",
-      autoplay: 5000,
-      hoverpause: true,
-    });
-    glide.mount();
-  },
+  // methods: {
+  //   generateSliderItem(count) {
+  //     const sliderItems = [];
+  //     for (let i = 0; i < count; i++) {
+  //       const sliderItem = {
+  //         id: i + 1,
+  //         image: faker.image.abstract(2000, 400, true),
+  //       };
+  //       sliderItems.push(sliderItem);
+  //     }
+  //     console.log(sliderItems);
+  //     return sliderItems;
+  //   },
+  // },
+  // mounted() {
+  //   const glide = new Glide(".glide", {
+  //     type: "carousel",
+  //     autoplay: 5000,
+  //     hoverpause: true,
+  //   });
+  //   glide.mount();
+  // },
 };
 </script>
