@@ -30,3 +30,12 @@ export default {
   name: "Header",
 };
 </script>
+<style scoped>
+header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 10;
+}
+</style>

@@ -1,27 +1,29 @@
 <template>
-  <div>
-    <section class="bg-blue-500 text-white py-16">
-      <div class="container mx-auto text-center">
-        <!-- <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li
-                class="glide__slide w-full bg-center bg-cover"
-                v-for="item in sliderItems"
-                :key="item?.id"
-              >
-                <img :src="item?.image" alt="Slide 1" />
-              </li>
-            </ul>
-          </div>
-        </div> -->
-        <h1 class="text-4xl font-bold mb-4">Welcome to Your App</h1>
-        <p class="text-lg mb-8">A powerful solution for all your needs</p>
-        <a
-          href="#menu"
-          class="bg-white text-blue-500 hover:bg-blue-100 text-lg px-6 py-3 rounded-full"
-          >Discover More</a
-        >
+  <div class="relative">
+    <section class="text-white">
+      <div class="bg-image py-40">
+        <div class="container mx-auto text-center">
+          <!-- <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li
+                  class="glide__slide w-full bg-center bg-cover"
+                  v-for="item in sliderItems"
+                  :key="item?.id"
+                >
+                  <img :src="item?.image" alt="Slide 1" />
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <h1 class="text-4xl font-bold mb-4">Welcome to Your App</h1>
+          <p class="text-lg mb-8">A powerful solution for all your needs</p>
+          <a
+            href="#menu"
+            class="bg-white text-blue-500 hover:bg-blue-100 text-lg px-6 py-3 rounded-full"
+            >Discover More</a
+          >
+        </div>
       </div>
     </section>
 
@@ -162,3 +164,13 @@ export default {
   // },
 };
 </script>
+
+<style scoped>
+.bg-image {
+  background-image: url("../assets/Capture-pJNanQKmno-transformed.png");
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+</style>
